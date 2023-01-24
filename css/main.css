@@ -1,0 +1,320 @@
+.about__us__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: rgb(237, 250, 241);
+}
+
+.about__us__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  height: 1000px;
+}
+
+.about__us__menu p {
+  text-align: justify;
+}
+
+.position-about-block{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.about__us__menu .left__block {
+  width: 400px;
+  height: 650px;
+
+  background-color: #fff;
+
+  border: 1px dashed rgb(179, 206, 186);
+  border-radius: 5px;
+}
+
+.about__us__menu .left__block p {
+  padding: 10px 30px 0px 30px;
+}
+
+.about__us__menu .left__block h1 {
+  padding: 30px 0px 0px 30px;
+}
+
+.text__circle__block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.circle__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  background-color: #fff;
+}
+
+.right__block {
+  display: contents;
+}
+
+.position__block__about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 80px;
+}
+
+.first__color__circle {
+  background-color: #fc5c65;
+}
+
+.second__color__circle {
+  background-color: #fd9644;
+}
+
+.third__color__circle {
+  background-color: #26de81;
+}
+
+.fourth__color__circle {
+  background-color: #3867d6;
+}
+
+.fifth__color__circle {
+  background-color: #4b6584;
+}
+
+.sixth__color__circle {
+  background-color: #8854d0;
+}
+
+/* video__block */
+
+.video__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 600px;
+
+  background-color: #c8cdd2;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  border-radius: 5px;
+}
+
+/* gallary__block */
+
+.galllary {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  height: 850px;
+
+  background-image: url(../img/reviews-bg.png);
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  width: 1200px;
+  height: 600px;
+}
+
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.child:nth-child(4) {
+  grid-column-start: 3;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.gallary__photo {
+  width: 100%;
+  height: 100%;
+}
+
+/* teachers__block */
+
+.our__teachers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+
+  height: 500px;
+
+  background-color: #f0f1f5;
+}
+
+.Staff__block {
+  display: flex;
+  gap: 160px;
+}
+
+.staff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 130px;
+  height: 200px;
+
+  border-radius: 50%;
+
+  background-color: #000;
+
+  overflow: hidden;
+}
+
+.staff__and__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* gallary__block */
+
+.gallary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallary__block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  padding: 5px;
+
+  max-width: 1250px;
+
+  border: 2px dashed rgb(179, 206, 186);
+}
+
+.gallary_photo{
+  width: 400px;
+}
+
+.video_block{
+  width: 800px;
+}
+
+.link__gallary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #26de81;
+
+  cursor: pointer;
+  transition: 1s;
+}
+
+.link__gallary:hover{
+  background-color: #3ab176;
+  transition: 1s;
+}
+
+.link__gallary a{
+  text-decoration: none;
+  color: #000;
+}
+
+.doctors__gallary__block{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 600px;
+
+  border: 2px dashed rgb(179, 206, 186);
+}
+
+.doctor{
+  height: 250px;
+}
+
+.caregivers{
+  width: 700px;
+}
+
+.director{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.doctor__style{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.doctor__style p{
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about__us__menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 1600px;
+  }
+
+ .about__us__block .left__block{
+    width: 550px;
+  }
+
+  .about__us__block .right__block{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
+}
+

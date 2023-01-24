@@ -1,0 +1,151 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 300px;
+}
+
+.header {
+  display: flex;
+  gap: 50px;
+}
+
+.position__kindergarten {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__us {
+  display: flex;
+  flex-direction: column;
+
+  gap: 35px;
+}
+
+.about__us p {
+  padding-left: 17px;
+}
+
+.about__us h2 {
+  padding-left: 17px;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about__us p span {
+  font-weight: 700;
+  font-size: 24px;
+
+  color: blue;
+}
+
+.logo {
+  width: 200px;
+}
+
+.number__and__location {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.number__and__location h2{
+  padding: 0;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(53, 168, 235, 0.13);
+}
+
+.circle__and__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+
+.icon__header {
+  width: 30px;
+}
+
+/* nav-bar */
+
+.languages{
+  display: flex;
+    
+  position: absolute;
+  right: 20px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  list-style-type: none;
+
+  width: 1000px;
+  height: 50px;
+
+  background-color: rgba(0, 255, 34, 0.356);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+
+  font-weight: 700;
+
+  padding: 10px 15px;
+}
+
+nav ul li:nth-child(1) {
+  padding-left: 15px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(1, 128, 231);
+  color: #fff;
+
+  border-radius: 1000px;
+}
+
+.number__and__location {
+  list-style-type: none;
+}
+
+.number__and__location .translate {
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    display: none;
+  }
+  .header .logo {
+    margin-top: 240px;
+  }
+}
