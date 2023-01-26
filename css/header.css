@@ -53,7 +53,7 @@ header {
   gap: 10px;
 }
 
-.number__and__location h2{
+.number__and__location h2 {
   padding: 0;
 }
 
@@ -84,12 +84,18 @@ header {
 
 /* nav-bar */
 
-.languages{
+.languages {
   display: flex;
-    
+
   position: absolute;
   right: 20px;
 }
+
+nav {
+
+  width: 100%;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -98,7 +104,6 @@ nav ul {
 
   list-style-type: none;
 
-  width: 1000px;
   height: 50px;
 
   background-color: rgba(0, 255, 34, 0.356);
@@ -132,20 +137,96 @@ nav ul li a:hover {
   border: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+/* burger-menu */
 
-  nav {
-    display: none;
-  }
-  .header .logo {
-    margin-top: 240px;
-  }
+.menu-btn {
+  margin-top: 50px;
+
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+
+.menu-btn {
+  position: absolute;
+}
+
+.menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #FFEFBA;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+.translate {
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+
+  outline: none;
+  background-color: transparent;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
 }

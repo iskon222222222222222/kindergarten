@@ -5,17 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Cheerful Kindergarten</title>
   </head> 
    <body>
       <header>
         <div class="header">
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu">
+            <div class="nav">
+               <ul>
+              <li><a href="index.html" class="lang" key="main">Главная</a></li>
+              <li><a href="gallary.html" class="lang" key="photo-gallery">Фотогалерея</a></li>
+              <li><a href="#" class="lang" key="staff">Сотрудники</a></li>
+              <li><a href="#" class="lang" key="prof">Профессионализм учителей</a></li>
+              <li><a href="#" class="lang" key="news">Новости</a></li>
+              <div class="language">
+                <li><button id="en" class="translate"><img src="img/flag/icons8-great-britain-64.png" alt="" width="40px" height="30px"></button></li>
+                <li><button id="rr" class="translate"><img src="img/flag/icons8-russia-64.png" alt=""  width="40px" height="30px"></button></li>
+                <li><button id="uz" class="translate"><img src="img/flag/icons8-uzbekistan-64.png" alt=""  width="40px" height="30px"></button></li>
+              </div>
+               </ul>
+            </div>
+          </div>
           <div><img src="img/logo.png" alt="" class="logo" /></div>
           <div class="about__us">
             <div class="position__kindergarten">
@@ -57,6 +79,8 @@
               >
             </li>
             <li><a href="#" class="lang" key="photo-gallery">Сотрудники</a></li>
+            <li><a href="#" class="lang" key="prof">Профессионализм учителей</a></li>
+            <li><a href="#" class="lang" key="news">Новости</a></li>
             <div class="languages">
               <li><button id="en" class="translate"><img src="img/flag/icons8-great-britain-64.png" alt="" width="40px" height="30px"></button></li>
               <li><button id="ru" class="translate"><img src="img/flag/icons8-russia-64.png" alt=""  width="40px" height="30px"></button></li>
@@ -69,7 +93,7 @@
       <div class="gallary__block director">
         <img src="img/staff/photo_2023-01-19_17-47-26.jpg" alt="" class="doctor">
         <h3 class="lang" key="director">Директор</h3>
-        <p class="lang" key="director--name">Егиталиева Мухлиса Ахадовна</p>
+        <p class="lang" key="director--name" style="font-weight: 500;">Йигиталиева Мухлиса Ахадовна</p>
       </div>
 
       <div class="doctors__gallary__block" style="margin-top: 50px;">
@@ -84,13 +108,13 @@
       </div>
 
       <h1 style="text-align: center; margin-top: 50px;" class="lang" key="educators">Воспитатели:</h1>
-      <div class="gallary__block caregivers">
-        <img src="img/staff/caregivers.jpg" alt="" style="width: 680px;"> 
+      <div class="gallary__block">
+        <img src="img/staff/caregivers.jpg" alt="" style="width: 80%;"> 
       </div>
 
       <h1 style="text-align: center; margin-top: 50px;" class="lang" key="teachers">Учителя:</h1>
         <div class="gallary__block">
-         <img src="img/staff/teachers.jpg" alt="" style="width: 1000px;">
+         <img src="img/staff/teachers.jpg" alt="" style="width: 100%;">
         </div>
     </section>
     <script src="js/main.js"></script>

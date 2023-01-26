@@ -6,16 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Cheerful Kindergarten</title>
   </head>
   <body>
     <header>
       <div class="header">
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu">
+          <div class="nav">
+             <ul>
+            <li><a href="index.html" class="lang" key="main">Главная</a></li>
+            <li><a href="#" class="lang" key="photo-gallery">Фотогалерея</a></li>
+            <li><a href="staff.html" class="lang" key="staff">Сотрудники</a></li>
+            <li><a href="#" class="lang" key="prof">Профессионализм учителей</a></li>
+            <li><a href="#" class="lang" key="news">Новости</a></li>
+            <div class="language">
+              <li><button id="en" class="translate"><img src="img/flag/icons8-great-britain-64.png" alt="" width="40px" height="30px"></button></li>
+              <li><button id="rr" class="translate"><img src="img/flag/icons8-russia-64.png" alt=""  width="40px" height="30px"></button></li>
+              <li><button id="uz" class="translate"><img src="img/flag/icons8-uzbekistan-64.png" alt=""  width="40px" height="30px"></button></li>
+            </div>
+             </ul>
+          </div>
+        </div>
         <div><img src="img/logo.png" alt="" class="logo" /></div>
         <div class="about__us">
           <div class="position__kindergarten">
@@ -57,8 +79,10 @@
             >
           </li>
           <li><a href="staff.html" class="lang" key="staff">Сотрудники</a></li>
+          <li><a href="#" class="lang" key="prof">Профессионализм учителей</a></li>
+          <li><a href="#" class="lang" key="news">Новости</a></li>
          <div class="languages">
-            <li><button id="en" class="translate"><img src="img/flag/icons8-great-britain-64.png" alt="" width="40px" height="30px"></button></li>
+            <li><button id="en" class="trnslate"><img src="img/flag/icons8-great-britain-64.png" alt="" width="40px" height="30px"></button></li>
             <li><button id="ru" class="translate"><img src="img/flag/icons8-russia-64.png" alt=""  width="40px" height="30px"></button></li>
             <li><button id="uz" class="translate"><img src="img/flag/icons8-uzbekistan-64.png" alt=""  width="40px" height="30px"></button></li>
          </div>
@@ -66,7 +90,7 @@
       </nav>
     </header>
     <h1 style="text-align: center" class="lang" key="gallary">Галерея:</h1>
-    <section class="gallary">
+    <section class="galllary">
       <div class="gallary__block">
         <img src="img/слайд/1.jpg" alt="" class="gallary_photo" />
         <img src="img/слайд/2.jpg" alt="" class="gallary_photo" />
@@ -93,8 +117,8 @@
         />
       </div>
       <h1 style="text-align: center; margin-top: 50px;" class="lang" key="vidio">Видео:</h1>
-      <div class="gallary__block video_block">
-        <video controls width="800" height="400">
+      <div class="video_block">
+        <video controls width="100%" height="100%">
           <source src="img/видео/2_5456439393298425348.mp4" type="video/mp4" />
           <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
           <source src="img/видео/2_5456439393298425348.mp4" type="video/webm" />
@@ -110,7 +134,7 @@
           </object>
         </video>
 
-        <video controls width="800" height="400">
+        <video controls width="100%" height="100%">
           <source src="img/видео/2_5472122973185908273.mp4" type="video/mp4" />
           <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
           <source src="img/видео/2_5472122973185908273.mp4" type="video/webm" />
@@ -126,7 +150,7 @@
           </object>
         </video>
 
-        <video controls width="800" height="400">
+        <video controls width="100%" height="100%">
           <source src="img/видео/3.mp4" type="video/mp4" />
           <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
           <source src="img/видео/3.mp4" type="video/webm" />
@@ -142,7 +166,7 @@
           </object>
         </video>
 
-        <video controls width="800" height="400">
+        <video controls width="100%" height="100%">
           <source src="img/видео/4.mp4" type="video/mp4" />
           <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
           <source src="img/видео/4.mp4" type="video/webm" />
@@ -158,7 +182,7 @@
           </object>
         </video>
 
-        <video controls width="800" height="400">
+        <video controls width="100%" height="100%">
           <source src="img/видео/5.mp4" type="video/mp4" />
           <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
           <source src="img/видео/5.mp4" type="video/webm" />
@@ -173,6 +197,7 @@
             <param name="movie" value="video.swf" />
           </object>
         </video>
+      </div>
     </section>
 
     <script src="js/main.js"></script>

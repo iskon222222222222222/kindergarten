@@ -11,6 +11,8 @@ var arrLang = {
     'about-kindergarten': 'About kindergarten',
     'photo-gallery': 'Photo gallery',
     'staff': 'Staff',
+    'prof': 'Professionals',
+    'news': 'news',
 
     'about__kidergarten__title': 'About us',
     'about__kidergarten': 'The kindergarten "Cheerful kindergarten" was founded in May 2020, successfully carries out activities on the system of education and developmental training. The kindergarten "Cheerful kindergarten" has a nursery, junior, senior, preparatory groups, and also school groups up to the 4th grade. From 20 to 30 children study in each group. The goal of our kindergarten is to create an atmosphere and space in which your child will feel like at home. In cooperation with invited lecturers of the highest class as well as with loving teachers, your child will acquire personality qualities that have the necessary life skills and are ready to acquire the fast-flowing information of this world! Our educators are qualified teachers who have an endless Desire to work with children and are always ready to share with you valuable advice in matters of education and training.',
@@ -37,7 +39,7 @@ var arrLang = {
     'doctor': 'Doctor',
     'educators': 'Educators',
     'teachers': 'Teachers',
-    'director--name': 'Enginaliyeva Muxlisa Axadovna',
+    'director--name': 'Yigitaliyeva Muxlisa Axadovna',
   },
   'uz': {
     'private__kindergarten': 'Xususiy bolalar bog\'chasi',
@@ -45,6 +47,8 @@ var arrLang = {
     'about-kindergarten': 'Bogchasi haqida',
     'photo-gallery': 'Fotogalereya',
     'staff': 'Xodimlar',
+    'prof': 'Uqituvchilarni ish faoliyati',
+    'news': 'yangiliklar',
 
     'about__kidergarten__title': 'Biz haqimizda',
     'about__kidergarten': "'Cheerful kindergarten' bolalar bog'chasi 2020 yil may oyida tashkil etilgan bo'lib, ta'lim va rivojlanish ta'limi tizimida muvaffaqiyatli faoliyat olib bormoqda. 'Cheerful' bolalar bog'chasi bolalar bog'chasida bolalar bog'chasi, kichik, katta , tayyorgarlik guruhlari, shuningdek 4-sinfgacha bo'lgan maktab guruhlari mavjud. Har bir guruhda 20 dan 30 gacha bolalar bor. Bizning bolalar bog'chamizning maqsadi-bolangiz o'z uyida bo'lgandek his qiladigan muhit va makon yaratishdir. Yuqori sinf mehmon o'qituvchilari va mehribon o'qituvchilar bilan hamkorlikda sizning farzandingiz zarur hayotiy ko'nikmalarga ega bo'lgan va bu dunyoning tezkor ma'lumotlarini olishga tayyor bo'lgan shaxsiy xususiyatlarga ega bo'ladi! Bizning tarbiyachilarimiz malakali o'qituvchilardir, ular bolalar bilan ishlashni cheksiz xohlashadi va har doim siz bilan ta'lim va tarbiya masalalarida qimmatli maslahatlarni baham ko'rishga tayyor.",
@@ -70,7 +74,7 @@ var arrLang = {
     'doctor': 'Doktor',
     'educators': 'Tarbiyachilar',
     'teachers': 'O\'qituvchilar',
-    'director--name': 'Enginaliyeva Muxlisa Axadovna',
+    'director--name': 'Yigitaliyeva Muxlisa Axadovna',
   }
 }
 
@@ -85,4 +89,12 @@ var arrLang = {
     });
   });
 
+  
+// burger-menu
 
+  let menuBtn = document.querySelector('.menu-btn');
+  let menu = document.querySelector('.menu');
+  menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('active');
+    menu.classList.toggle('active');
+  })

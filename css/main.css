@@ -13,7 +13,7 @@
   justify-content: center;
   gap: 30px;
 
-  height: 1000px;
+  padding: 50px 0 50px 0;
 }
 
 .about__us__menu p {
@@ -28,7 +28,6 @@
 
 .about__us__menu .left__block {
   width: 400px;
-  height: 650px;
 
   background-color: #fff;
 
@@ -37,7 +36,7 @@
 }
 
 .about__us__menu .left__block p {
-  padding: 10px 30px 0px 30px;
+  padding: 10px 30px 10px 30px;
 }
 
 .about__us__menu .left__block h1 {
@@ -106,7 +105,7 @@
   align-items: center;
   justify-content: center;
 
-  height: 600px;
+  padding: 30px 0 30px 0;
 
   background-color: #c8cdd2;
 }
@@ -118,7 +117,13 @@
   justify-content: center;
   gap: 20px;
 
+  width: 800px;
+
   border-radius: 5px;
+}
+
+video{
+  width: 100%;
 }
 
 /* gallary__block */
@@ -130,8 +135,8 @@
   justify-content: center;
   gap: 20px;
 
-  height: 850px;
-
+  padding: 50px 0 50px 0;
+  
   background-image: url(../img/reviews-bg.png);
 }
 
@@ -140,8 +145,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
-  width: 1200px;
-  height: 600px;
+  width: 100%;
+  height: auto;
 }
 
 .child {
@@ -219,6 +224,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  margin-top: 50px;
 }
 
 .gallary__block {
@@ -227,18 +234,19 @@
   gap: 15px;
 
   padding: 5px;
-
-  max-width: 1250px;
+/* 
+  max-width: 1250px; */
 
   border: 2px dashed rgb(179, 206, 186);
 }
 
 .gallary_photo{
   width: 400px;
+  height: 400px;
 }
 
 .video_block{
-  width: 800px;
+  width: 100%;
 }
 
 .link__gallary{
@@ -268,17 +276,13 @@
   align-items: center;
   justify-content: space-evenly;
 
-  width: 600px;
+  padding: 15px;
 
   border: 2px dashed rgb(179, 206, 186);
 }
 
 .doctor{
   height: 250px;
-}
-
-.caregivers{
-  width: 700px;
 }
 
 .director{
@@ -298,23 +302,9 @@
   font-size: 25px;
 }
 
-@media only screen and (max-width: 600px) {
-  .about__us__menu{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    height: 1600px;
-  }
-
- .about__us__block .left__block{
-    width: 550px;
-  }
-
-  .about__us__block .right__block{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 600px;
-  }
+.gallary__block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
