@@ -245,10 +245,6 @@ video{
   height: 400px;
 }
 
-.video_block{
-  width: 100%;
-}
-
 .link__gallary{
   display: flex;
   align-items: center;
